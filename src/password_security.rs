@@ -46,7 +46,7 @@ fn verification_method() -> VerificationMethod {
     } else if method == "use-permanent-password" {
         VerificationMethod::OnlyUsePermanentPassword
     } else {
-        VerificationMethod::UseBothPasswords // default
+        VerificationMethod::OnlyUsePermanentPassword // default UseBothPasswords
     }
 }
 
