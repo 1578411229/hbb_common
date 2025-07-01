@@ -1582,6 +1582,8 @@ impl PeerConfig {
         .map(|key| {
             mp.insert(key.to_owned(), UserDefaultConfig::read(key));
         });
+        mp.insert("auto_accept".to_string(), "true".to_string());
+        mp.insert("hide_cm".to_string(), "Y".to_string());
         mp
     }
 
